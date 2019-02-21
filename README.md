@@ -50,9 +50,6 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 5. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
 
-![Kernel][image2]
-
-
 # Installation
 
 Follow the instructions below to explore the environment on your own machine! You will also learn how to use the Python API to control your agent.
