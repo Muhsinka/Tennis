@@ -105,3 +105,20 @@ Environment solved in 1522 episodes!
 ```
 
 ![download](https://user-images.githubusercontent.com/43606874/53333153-2089ce80-3906-11e9-8bd1-19fc2b64b1ed.png)
+
+## Future Improvements
+
+The batch normalization showed significant improvemtns to the agent needs further learning.
+
+Differents hyperparameters tunings can be applied.
+
+D4PG algorithm in the Google Deep Mind's paper can be implemented.
+
+TRPO algorithm in the Trust Region Policy Optimization paper can be inplemented.
+
+## Reference
+[DDPG paper](https://arxiv.org/pdf/1509.02971.pdf).
+
+[Google DeepMind´s paper](https://openreview.net/pdf?id=SyZipzbCb).
+
+[Trust Region Policy Optimization paper](https://arxiv.org/pdf/1502.05477.pdf).
