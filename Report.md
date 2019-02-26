@@ -1,6 +1,7 @@
 ## Introduction
 
 The project aims to provide a deeper understanding of Deep Deterministic policy Gradient(DDPG) that consist of actor-critic methods. The goal of this project to teach two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. Thus, the goal of each agent is to keep the ball in play.
+
 The DDPG pseudocode used to solve the enviroment is shown below.
 
 ![ddpg_algorithm](https://user-images.githubusercontent.com/43606874/52708863-43c68c80-2f9c-11e9-9001-20c619bd057d.png)
@@ -28,7 +29,7 @@ Hyperparameters used in the DDPG algorithm:
 - TAU = 1e-3
 - LR_ACTOR = 1e-4 
 - LR_CRITIC = 1e-3 
-- WEIGHT_DECAY = 0 0
+- WEIGHT_DECAY = 0
 
 
 ## Improvements
@@ -36,6 +37,7 @@ Hyperparameters used in the DDPG algorithm:
 First attemps with unimporeved code shown no signs of learning, the agent always got around 3-5 points in average.
 
 DDPG Code
+
 
 
 The Network 
