@@ -1,6 +1,6 @@
 ## Introduction
 
-The project aims to provide a deeper understanding of Deep Deterministic policy Gradient(DDPG) that consist of actor-critic methods. The goal of this project to teach two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. Thus, the goal of each agent is to keep the ball in play.
+The project aims to provide a deeper understanding of Deep Deterministic policy Gradient(DDPG) that consist of actor-critic methods. The goal of this project to teach two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. Thus, the goal of each agent is to keep the ball in play. The enviroment ends when the avarage rewards of both agents reach 0.50.
 
 The DDPG pseudocode used to solve the enviroment is shown below.
 
@@ -23,6 +23,21 @@ includes the following:
 
 Hyperparameters used in the DDPG algorithm:
 
+- BUFFER_SIZE = int(1e6)
+- BATCH_SIZE = 128 
+- GAMMA = 0.99
+- TAU = 1e-3
+- LR_ACTOR = 5e-5
+- LR_CRITIC = 6e-5 
+- WEIGHT_DECAY = 0.0001
+
+
+## Improvements
+
+First attemps with unimporeved code shown no signs of learning, the agent always got around 0-0.3 points in average.
+
+Hyperparameters
+
 - BUFFER_SIZE = int(1e5)
 - BATCH_SIZE = 128 
 - GAMMA = 0.99
@@ -30,15 +45,6 @@ Hyperparameters used in the DDPG algorithm:
 - LR_ACTOR = 1e-4 
 - LR_CRITIC = 1e-3 
 - WEIGHT_DECAY = 0
-
-
-## Improvements
-
-First attemps with unimporeved code shown no signs of learning, the agent always got around 3-5 points in average.
-
-DDPG Code
-
-
 
 The Network 
 
@@ -111,11 +117,17 @@ Environment solved in 1522 episodes!
 
 The batch normalization showed significant improvemtns to the agent needs further learning.
 
-Differents hyperparameters tunings can be applied.
+Trying different learning rates and batch size.
+
+Adding dropout layer can improve the model
+
+Adding prioritized experience replay
 
 D4PG algorithm in the Google Deep Mind's paper can be implemented.
 
 TRPO algorithm in the Trust Region Policy Optimization paper can be inplemented.
+
+Try a Competition instead of Collaboration.
 
 ## Reference
 [DDPG paper](https://arxiv.org/pdf/1509.02971.pdf).
