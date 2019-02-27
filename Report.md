@@ -134,4 +134,4 @@ Try a Competition instead of Collaboration.
 
 [Google DeepMind´s paper](https://openreview.net/pdf?id=SyZipzbCb).
 
-[Trust Region Policy Optimization paper](https://arxiv.org/pdf/1502.05477.pdf)..
+[Trust Region Policy Optimization paper](https://arxiv.org/pdf/1502.05477.pdf)...
