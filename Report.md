@@ -119,9 +119,9 @@ The batch normalization showed significant improvemtns to the agent needs furthe
 
 Trying different learning rates and batch size.
 
-Adding dropout layer can improve the model
+Adding dropout layer can improve the model.
 
-Adding prioritized experience replay
+Adding prioritized experience replay.
 
 D4PG algorithm in the Google Deep Mind's paper can be implemented.
 
